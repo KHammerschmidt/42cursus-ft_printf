@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_conversion.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: khammers <khammers@student.42.fr>          +#+  +:+       +#+        */
+/*   By: katharinahammerschmidt <katharinahammer    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 09:36:50 by khammers          #+#    #+#             */
-/*   Updated: 2021/08/09 13:17:21 by khammers         ###   ########.fr       */
+/*   Updated: 2021/10/15 15:17:26 by katharinaha      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 /*
-** Prototype: int	ft_conversion(va_list arg, const char *input, int i);
-**
 ** The function ft_conversion() prints the input parameter of printf in its
 ** associated data type, indicated by the letter/symbol that follows the '%' in
 ** the input string. The converstions 'c', 's', 'i', 'd', 'p', 'x', 'X' and '%'

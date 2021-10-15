@@ -3,19 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: khammers <khammers@student.42.fr>          +#+  +:+       +#+        */
+/*   By: katharinahammerschmidt <katharinahammer    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/26 17:27:39 by khammers          #+#    #+#             */
-/*   Updated: 2021/09/16 17:04:45 by khammers         ###   ########.fr       */
+/*   Updated: 2021/10/15 15:18:29 by katharinaha      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
 
 /*
-** Prototype: int	ft_printf(const char *input, ...);
-**
 ** The function ft_printf() takes a variable number of arguments, stated as an
 ** elipsis (...) and returns the total number of printed characters. The
 ** variadic arguments are accessed using the <stdarg.h> library (macros:
@@ -56,11 +53,3 @@ int	ft_printf(const char *input, ...)
 	va_end(arg);
 	return (char_count);
 }
-
-// int	main(void)
-// {
-// 	char input[] = "";
-// 	ft_printf("%s\n", input);
-// 	printf("%s\n", input);
-// 	return (0);
-// }

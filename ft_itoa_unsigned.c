@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa_unsigned.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: khammers <khammers@student.42.fr>          +#+  +:+       +#+        */
+/*   By: katharinahammerschmidt <katharinahammer    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/29 16:17:12 by khammers          #+#    #+#             */
-/*   Updated: 2021/08/09 13:47:00 by khammers         ###   ########.fr       */
+/*   Updated: 2021/10/15 15:17:42 by katharinaha      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,8 +64,6 @@ static char	*copy_digits_unsigned(unsigned long int b, int size)
 }
 
 /*
-** Prototype: char	*ft_itoa_unsigned(unsigned int n);
-**
 ** The function ft_itoa_unsigned() transforms an unsigned int
 ** into char representation, handling INT_MIN by casting 'n' to an unsigned
 ** long int.
