@@ -6,27 +6,15 @@
 /*   By: katharinahammerschmidt <katharinahammer    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/26 17:27:39 by khammers          #+#    #+#             */
-/*   Updated: 2021/10/15 15:18:29 by katharinaha      ###   ########.fr       */
+/*   Updated: 2022/03/07 18:26:07 by katharinaha      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-/*
-** The function ft_printf() takes a variable number of arguments, stated as an
-** elipsis (...) and returns the total number of printed characters. The
-** variadic arguments are accessed using the <stdarg.h> library (macros:
-** va_start, va_end).
-** (1) declares an object va_list which is used by the macros.
-** (2) enables access to variadic function arguments using va_start;
-** (3) while input string is !='\0' it loops through the string and either
-** (3a) detects a '%', iterates and calls ft_conversion() to detect data and
-** type to be printed or
-** (3b) prints each individual character calling ft_putchar_fd().
-** (4) once input string is NULL, the traversal of variadic function arguments
-** is ended using va_end, 'char_ptr' is freed and
-** (5) the overall number of characters printed is returned (char_count);
-*/
+/* Ft_printf() takes a variable number of arguments, stated as an elipsis (...)
+and returns the total number of printed characters. The variadic arguments are 
+accessed using the <stdarg.h> library (macros: va_start, va_end). */
 int	ft_printf(const char *input, ...)
 {
 	int		i;

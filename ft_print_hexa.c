@@ -3,19 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_hexa.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: khammers <khammers@student.42.fr>          +#+  +:+       +#+        */
+/*   By: katharinahammerschmidt <katharinahammer    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/02 11:38:58 by khammers          #+#    #+#             */
-/*   Updated: 2021/08/09 14:06:43 by khammers         ###   ########.fr       */
+/*   Updated: 2022/03/07 18:24:05 by katharinaha      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-/*
-** Transforms the input to char representation, differentiating between
-** upper- and lowerletter format, depending on specifier.
-*/
+/* Transforms the input to char representation, differentiating between 
+upper- and lowerletter format, depending on specifier.  */
 static char	ft_convert_tolower_toupper(int temp, char specifier)
 {
 	char	c;
@@ -30,9 +28,7 @@ static char	ft_convert_tolower_toupper(int temp, char specifier)
 	return (c);
 }
 
-/*
-** Prints the number by calling write().
-*/
+/* Prints the number. */
 static void	ft_print_hexa_nbr(int temp, char *hexadecimal_nbr)
 {
 	while (temp != 0)
@@ -42,9 +38,7 @@ static void	ft_print_hexa_nbr(int temp, char *hexadecimal_nbr)
 	}
 }
 
-/*
-** In case of 0 as input, the function prints a '0'.
-*/
+/* In case of 0 as input, the function prints a '0'. */
 static int	ft_null_input(int len)
 {
 	write(1, "0", 1);
@@ -52,12 +46,8 @@ static int	ft_null_input(int len)
 	return (len);
 }
 
-/*
-** The function ft_calculate_hexa_nbr() converts int to hexadecimal,
-** allocates memory with malloc(3) and prints the conversion by
-** calling ft_print_hexa_nbr(). The string is freed and its length
-** returned.
-*/
+/* The function converts int to hexadecimal, and prints the conversion.
+The string is freed and its length returned. */
 static int	ft_calculate_hexa_nbr(unsigned long save, char specifier)
 {
 	unsigned long	quotient;
@@ -85,18 +75,8 @@ static int	ft_calculate_hexa_nbr(unsigned long save, char specifier)
 	return (len);
 }
 
-/*
-** The function ft_print_hexa() handles the conversion of printf's
-** input 'p', 'x' and 'X', prints the input and returnes the length.
-** (1) if specifier = p: a void *pointer argument is printed in
-** hexadecimal. The va_arg(arg, void*) is assigned to the unsigned long
-** 'save' and '0x' (start of the address) printed. Lenght is set to 2.
-** (2) otherwise an int is printed in hexadecimal and the parameter
-** va_arg(arg, unsigned int) assigned to 'save'.
-** (3) hexadecimal number is calculated by calling ft_calculate_hexa_nbr(),
-** (4) the printed length determined and returned.
-**
-*/
+/* The function ft_print_hexa() handles the conversion of printf's
+input 'p', 'x' and 'X', prints the input and returnes the length. */
 int	ft_print_hexa(va_list arg, char specifier)
 {
 	void			*void_ptr;

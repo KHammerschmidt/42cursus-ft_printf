@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: khammers <khammers@student.42.fr>          +#+  +:+       +#+        */
+/*   By: katharinahammerschmidt <katharinahammer    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 17:03:48 by khammers          #+#    #+#             */
-/*   Updated: 2021/09/16 17:04:35 by khammers         ###   ########.fr       */
+/*   Updated: 2022/03/07 18:19:36 by katharinaha      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
+/* Needs to be adapted to test input. */
 int	main(void)
 {
 	// char input[] = "";

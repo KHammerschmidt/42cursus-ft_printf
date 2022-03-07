@@ -6,27 +6,26 @@
 #    By: katharinahammerschmidt <katharinahammer    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/27 08:35:19 by khammers          #+#    #+#              #
-#    Updated: 2021/10/15 15:19:21 by katharinaha      ###   ########.fr        #
+#    Updated: 2022/03/07 18:26:50 by katharinaha      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc
-CFLAGS = -Wall -Werror -Wextra
+NAME = libftprintf.a
 
-SRC = ft_printf.c \
-	ft_conversion.c \
-	ft_print_char.c \
-	ft_print_string.c \
-	ft_print_hexa.c \
-	ft_print_int.c \
-	ft_print_unsigned_int.c \
-	ft_itoa_unsigned.c
+CC 		= 		gcc
+CFLAGS 	= 		-Wall -Werror -Wextra
+
+SRC 	= 		ft_printf.c 			\
+				ft_conversion.c 		\
+				ft_print_char.c 		\
+				ft_print_string.c 		\
+				ft_print_hexa.c 		\
+				ft_print_int.c 			\
+				ft_print_unsigned_int.c \
+				ft_itoa_unsigned.c
 
 LIBFT_OBJ = ./libft/*.o
-
 OBJECTS = $(SRC:.c=.o)
-
-NAME = libftprintf.a
 
 all: $(NAME)
 

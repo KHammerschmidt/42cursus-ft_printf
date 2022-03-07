@@ -6,16 +6,13 @@
 /*   By: katharinahammerschmidt <katharinahammer    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/29 16:17:12 by khammers          #+#    #+#             */
-/*   Updated: 2021/10/15 15:17:42 by katharinaha      ###   ########.fr       */
+/*   Updated: 2022/03/07 18:22:01 by katharinaha      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-/*
-** The function get_size_unsigned() counts the number of digits of the unsigned
-** long int 'n' for dynamic memory allocation later.
-*/
+/* Counts the number of digits of 'n' for memory allocation later. */
 static int	get_size_unsigned(unsigned long int n)
 {
 	int	size;
@@ -34,11 +31,7 @@ static int	get_size_unsigned(unsigned long int n)
 	return (size);
 }
 
-/*
-** The function copy_digits_unsigned() transforms each individual digit
-** into char representation, mallocs '*str' with the size.
-**
-*/
+/* Transforms each individual digit into char representation. */
 static char	*copy_digits_unsigned(unsigned long int b, int size)
 {
 	char	c;
@@ -63,18 +56,15 @@ static char	*copy_digits_unsigned(unsigned long int b, int size)
 	return (str);
 }
 
-/*
-** The function ft_itoa_unsigned() transforms an unsigned int
-** into char representation, handling INT_MIN by casting 'n' to an unsigned
-** long int.
-*/
+/* Transforms an int into char representation, handling INT_MIN. */
 char	*ft_itoa_unsigned(unsigned int n)
 {
-	int					size;
-	char				*str;
-	unsigned long int	b;
+	int				size;
+	char			*str;
+	unsigned long	b;
 
-	b = (unsigned int long)n;
+	b = (unsigned long)n;
 	size = get_size_unsigned(b);
-	return (str = copy_digits_unsigned(b, size));
+	str = copy_digits_unsigned(b, size);
+	return (str);
 }
