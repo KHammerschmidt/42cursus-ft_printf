@@ -22,7 +22,7 @@ SDIR		:=	srcs/
 ODIR		:= 	obj/
 DDIR		:=	$(ODIR)deps/
 
-LIBFT_DIR	:= 	./Libft/
+LIBFT_DIR	:= 	Libft/
 LDLIBS		:=	$(LIBFT_DIR)libft.a
 
 SRCS 		:= 	main.c												\
@@ -46,7 +46,13 @@ $(NAME): $(LIB)
 	@$(CC) $(CFLAGS) -o $@ $(OBJS) $< $(LDLIBS)
 	@echo "$(WARN_COLOR)...build executable $(NAME)"
 
-$(LIB): LIBFT $(ODIR) $(DDIR) $(DEPS) $(OBJS)
+# $(LIBFT):
+# 	make -C $(LIBFT_DIR)
+# 	@echo "compiling libft"
+
+$(LIB): $(ODIR) $(DDIR) $(DEPS) $(OBJS)
+	@make -C $(LIBFT_DIR)
+	@echo "...compiling libft.a"
 	@ar -rcs $(LIB) $(OBJS)
 	@echo "$(COM_COLOR)...creating: $(LIB)"
 
@@ -60,9 +66,6 @@ $(ODIR):
 $(DDIR):
 	@mkdir -p $(DDIR)
 	@echo "$(OBJ_COLOR)...creating dependency files..."
-
-LIBFT:
-	make -C $(LIBFT_DIR)
 
 clean:
 	@rm -rf $(LIB) $(OBJS) $(ODIR) $(DDIR)
