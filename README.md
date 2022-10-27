@@ -53,9 +53,8 @@ Here are the requirements:
 
 </br>
 
----
 
-### 🌁  Format specifiers explained
+## 🌁  Format specifiers explained
 | Specifier	| Meaning																|
 | ----------|-----------------------------------------------------------------------|
 | * [`c`]	| Prints a single character   				   							|
