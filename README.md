@@ -10,7 +10,7 @@
 
 
 <p align="center">
-	<b>Development repo of printing output with format specifiers</b></br>
+	<b>Printing output with format specifiers by using variadic arguments</b></br>
 	Start date: 05/august/2021 </br>
 </p>
 
@@ -35,7 +35,8 @@
 ' c ', ' s ', ' p ', ' d ', ' i ', ' u ', ' x ', ' X ' and ' % '.
 <br/>
 
-**Requirements**
+**Requirements** </br>
+
 Here are the requirements:
 • Your function has to handle the following conversions: cspdiuxX%
 • Your function will be compared against the original printf().
