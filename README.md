@@ -44,7 +44,6 @@ Here are the requirements:
 • Don’t implement the buffer management of the original printf().
 • Using the libtool command is forbidden.
 • Your libftprintf.a has to be created at the root of your repository.
-
 </br>
 
 **Key learning points**
@@ -52,6 +51,8 @@ Here are the requirements:
   - Organising a complex project with various sub-functions & libraries in sub-directories
 
 </br>
+
+---
 
 ### Format specifiers explained
 | Specifier	| Meaning																|
