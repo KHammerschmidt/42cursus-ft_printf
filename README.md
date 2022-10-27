@@ -1,7 +1,7 @@
 <h1 align="center">
   <img  width="90" src="https://user-images.githubusercontent.com/19689770/129336866-169b0dc7-ea41-47d4-b50a-d466508031af.png">
   
-	🧰 libft
+	🧰 ft_printf
  </img>
 	<sub><sub>Project status</sub></sub></br>
 	<sub><a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/cl9mxvq9700780hl4msqc8saj/project/2280437" alt="khammers's 42 ft_printf Score" /></a></sub></br>
@@ -9,10 +9,10 @@
 </br>
 
 
-<h1 align="center">
-	Development repo of printing output with format specifiers
+<p align="center">
+	<b>Development repo of printing output with format specifiers</b></br>
 	Start date: 05/august/2021 </br>
-</h1>
+</p>
 
 <p align="center">
 	<img alt="Github code size in bytes" src="https://img.shields.io/github/languages/code-size/KHammerschmidt/42cursus-ft_printf"/>
