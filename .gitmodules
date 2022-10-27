@@ -1,0 +1,6 @@
+[submodule "Libft"]
+	path = Libft
+	url = https://github.com/KHammerschmidt/Libft
+[submodule "incl/Libft"]
+	path = incl/Libft
+	url = https://github.com/KHammerschmidt/Libft

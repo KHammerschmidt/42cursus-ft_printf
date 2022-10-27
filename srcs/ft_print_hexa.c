@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_print_hexa.c                                    :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: katharinahammerschmidt <katharinahammer    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/02 11:38:58 by khammers          #+#    #+#             */
-/*   Updated: 2022/03/07 18:24:05 by katharinaha      ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "ft_printf.h"
+#include "ft_printf.h"  
 
 /* Transforms the input to char representation, differentiating between 
 upper- and lowerletter format, depending on specifier.  */
@@ -38,7 +26,7 @@ static void	ft_print_hexa_nbr(int temp, char *hexadecimal_nbr)
 	}
 }
 
-/* In case of 0 as input, the function prints a '0'. */
+/* Prints a '0' when input is 0. */
 static int	ft_null_input(int len)
 {
 	write(1, "0", 1);
@@ -46,7 +34,7 @@ static int	ft_null_input(int len)
 	return (len);
 }
 
-/* The function converts int to hexadecimal, and prints the conversion.
+/* Converts int to hexadecimal and prints conversion.
 The string is freed and its length returned. */
 static int	ft_calculate_hexa_nbr(unsigned long save, char specifier)
 {
@@ -75,8 +63,7 @@ static int	ft_calculate_hexa_nbr(unsigned long save, char specifier)
 	return (len);
 }
 
-/* The function ft_print_hexa() handles the conversion of printf's
-input 'p', 'x' and 'X', prints the input and returnes the length. */
+/* Handles the conversion of input 'p', 'x' and 'X', prints the input and returnes the length. */
 int	ft_print_hexa(va_list arg, char specifier)
 {
 	void			*void_ptr;

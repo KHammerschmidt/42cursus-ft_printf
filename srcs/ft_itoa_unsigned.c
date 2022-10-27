@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_itoa_unsigned.c                                 :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: katharinahammerschmidt <katharinahammer    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/29 16:17:12 by khammers          #+#    #+#             */
-/*   Updated: 2022/03/07 18:22:01 by katharinaha      ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "ft_printf.h"
+#include "ft_printf.h"  
 
 /* Counts the number of digits of 'n' for memory allocation later. */
 static int	get_size_unsigned(unsigned long int n)
