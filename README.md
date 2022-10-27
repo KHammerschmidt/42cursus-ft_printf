@@ -1,34 +1,70 @@
 <h1 align="center">
-	🧰 42cursus - ft_printf
+  <img  width="90" src="https://user-images.githubusercontent.com/19689770/129336866-169b0dc7-ea41-47d4-b50a-d466508031af.png">
+  
+	🧰 libft
+ </img>
+	<sub><sub>Project status</sub></sub></br>
+	<sub><a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/cl9mxvq9700780hl4msqc8saj/project/2280437" alt="khammers's 42 ft_printf Score" /></a></sub></br>
+</h1>
+</br>
+
+
+<h1 align="center">
+	Development repo of printing output with format specifiers
+	Start date: 05/august/2021 </br>
 </h1>
 
 <p align="center">
-	<b><i>Formatting output</i></b><br>
+	<img alt="Github code size in bytes" src="https://img.shields.io/github/languages/code-size/KHammerschmidt/42cursus-ft_printf"/>
+	<img alt="Github repo size" src="https://img.shields.io/github/repo-size/KHammerschmidt/42cursus-ft_printf?color=orange"/>
+	<img alt="Languages used in repo" src="https://img.shields.io/github/languages/count/KHammerschmidt/42cursus-ft_printf?color=red&label=languages%20used%20in%20repo"/>
+	<img alt="Top used progamming language" src="https://img.shields.io/github/languages/top/KHammerschmidt/42cursus-ft_printf?color=yellow"/>	
 </p>
+
+<h3 align="center">
+	<a href="-about">About</a>
+	<span> · </span>
+	<a href="-list-of-functions">List of functions</a>
+	<span> · </span>
+	<a href="#-usage">Usage</a>
+</h3>
+
 
 ## 💡 About the project
 > The aim of this project is to re-code ``` libc ```'s printf function with the conversions:<br/>
 'c', 's', 'p', 'd', 'i', 'u', 'x', 'X' and '%'.
 <br/>
 
+**Requirements**
+Here are the requirements:
+• Your function has to handle the following conversions: cspdiuxX%
+• Your function will be compared against the original printf().
+• You must use the command ar to create your library.
+• Don’t implement the buffer management of the original printf().
+• Using the libtool command is forbidden.
+• Your libftprintf.a has to be created at the root of your repository.
+
+</br>
+
 **Key learning points**
   - Handling variadic arguments
   - Organising a complex project with various sub-functions & libraries in sub-directories
 
+</br>
 
 ### Format specifiers explained
-| Format characters	| Meaning															|
-| ------------------|-------------------------------------------------------------------|
-| * [`c`]		 	| First byte of an argument is printed								|
-| * [`s`]		 	| Bytes from the string argument are printed 						|
-| * [`p`]		 	| The address of a pointer is written (in hexadecimal) 				|
-| * [`d`]		 	| The argument is printed as a signed decimal						|
-| * [`i`]		 	| The argument is printed as a signed decimal						|
-| * [`u`]		 	| The argument is printed as an unsigned integer					|
-| * [`x`]		 	| The argument is printed as an unsigned hexadecimal in lowercase	|
-| * [`X`]		 	| The argument is printed as an unsigned hexadecimal in uppercase	|
-| * [`%`]		 	| Prints a '%' 														|
-
+| Specifier	| Meaning																|
+| ----------|-----------------------------------------------------------------------|
+| * [`c`]	| Prints a single character   				   							|
+| * [`s`]	| Prints a string (as defined by the common C convention) 				|
+| * [`p`]	| The void * pointer argument has to be printed in hexadecimal format   |
+| * [`d`]	| Prints a decimal (base 10) number 									|
+| * [`i`]	| Prints an integer in base 10											|
+| * [`u`]	| Prints an unsigned decimal (base 10) number							|
+| * [`x`]	| Prints a number in hexadecimal (base 16) lowercase format				|
+| * [`X`]	| Prints a number in hexadecimal (base 16) uppercase format				|
+| * [`%`]	| Prints a percent sign 												|
+</br>
 
 ## 🛠️ **Usage**
  Use: To compile library libftprintf.a and build the executable ft_printf use the command ``` make ``` <br/>
