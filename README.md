@@ -69,7 +69,7 @@ Here are the requirements:
 </br>
 
 ## 🛠️ **Usage**
- Use: To compile library libftprintf.a and build the executable ft_printf use the command ``` make ``` <br/>
+ To compile library libftprintf.a and build the executable ft_printf use the command ``` make ``` <br/>
  Libft project is required for compilation.
  
 ![Bildschirmfoto 2022-09-26 um 23 24 46](https://user-images.githubusercontent.com/80644370/192383696-04d7902f-c261-4a40-b11d-3a2060500570.png)
