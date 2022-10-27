@@ -28,6 +28,7 @@
 	<span> · </span>
 	<a href="#-usage">Usage</a>
 </h3>
+</br>
 
 
 ## 💡 About the project
@@ -54,7 +55,7 @@ Here are the requirements:
 
 ---
 
-### Format specifiers explained
+### 🌁  Format specifiers explained
 | Specifier	| Meaning																|
 | ----------|-----------------------------------------------------------------------|
 | * [`c`]	| Prints a single character   				   							|
