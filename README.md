@@ -24,7 +24,7 @@
 <h3 align="center">
 	<a href="-about">About</a>
 	<span> · </span>
-	<a href="-list-of-functions">List of functions</a>
+	<a href="-format-specifiers-explained">Format specifiers</a>
 	<span> · </span>
 	<a href="#-usage">Usage</a>
 </h3>
@@ -32,7 +32,7 @@
 
 ## 💡 About the project
 > The aim of this project is to re-code ``` libc ```'s printf function with the conversions:<br/>
-'c', 's', 'p', 'd', 'i', 'u', 'x', 'X' and '%'.
+' c ', ' s ', ' p ', ' d ', ' i ', ' u ', ' x ', ' X ' and ' % '.
 <br/>
 
 **Requirements**
