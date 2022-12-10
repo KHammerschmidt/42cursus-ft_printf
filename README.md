@@ -3,8 +3,7 @@
   
 	🧰 ft_printf
  </img>
-	<sub><sub>Project status</sub></sub></br>
-	<sub><a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/cl9mxvq9700780hl4msqc8saj/project/2280437" alt="khammers's 42 ft_printf Score" /></a></sub></br>
+
 </h1>
 </br>
 
@@ -12,6 +11,7 @@
 <p align="center">
 	<b>Printing output with format specifiers by using variadic arguments</b></br>
 	Start date: 05/august/2021 </br>
+	<sub> Project status: completed 100/100 points </sub>
 </p>
 
 <p align="center">
@@ -21,15 +21,7 @@
 	<img alt="Top used progamming language" src="https://img.shields.io/github/languages/top/KHammerschmidt/42cursus-ft_printf?color=yellow"/>	
 </p>
 
-<h3 align="center">
-	<a href="-about">About</a>
-	<span> · </span>
-	<a href="-format-specifiers-explained">Format specifiers</a>
-	<span> · </span>
-	<a href="#-usage">Usage</a>
-</h3>
-</br>
-
+---
 
 ## 💡 About the project
 > The aim of this project is to re-code ``` libc ```'s printf function with the conversions:<br/>
@@ -38,13 +30,12 @@
 
 **Requirements** </br>
 
-Here are the requirements:
-• Your function has to handle the following conversions: cspdiuxX%
-• Your function will be compared against the original printf().
-• You must use the command ar to create your library.
-• Don’t implement the buffer management of the original printf().
-• Using the libtool command is forbidden.
-• Your libftprintf.a has to be created at the root of your repository.
+• The function has to handle the following conversions: cspdiuxX% </br>
+• The function will be compared against the original printf() </br>
+• To create the library command ar must be used </br>
+• Don’t implement the buffer management of the original printf() </br>
+• Using the libtool command is forbidden </br>
+• Executable libftprintf.a has to be created at the root of your repository </br>
 </br>
 
 **Key learning points**
@@ -69,8 +60,21 @@ Here are the requirements:
 </br>
 
 ## 🛠️ **Usage**
- To compile library libftprintf.a and build the executable ft_printf use the command ``` make ``` <br/>
- Libft project is required for compilation.
- 
-![Bildschirmfoto 2022-09-26 um 23 24 46](https://user-images.githubusercontent.com/80644370/192383696-04d7902f-c261-4a40-b11d-3a2060500570.png)
+
+
+Clone the repository:
+```bash
+git clone https://github.com/KHammerschmidt/42cursus-ft_printf && 
+cd ft_printf &&
+git clone https://github.com/KHammerschmidt/42cursus-Libft
+```
+</br>
+
+To create library libftprintf.a:
+Create the library archive:
+```bash
+make
+```
+
+</br>
 
